@@ -1,0 +1,23 @@
+baseURL = 'https://ghe.siriusxm.com/pages/content-services/recommender-service/documentation/'
+languageCode = 'en-us'
+title = 'Content Services -  Recommender Core'
+theme = 'hugo-theme-relearn'
+themeVariant = 'relearn-dark'
+collapsibleMenu = false
+staticDir = 'static'
+ignoreFiles = [ 'template.md' ]
+
+# For search functionality
+[outputs]
+home = [ 'HTML', 'RSS', 'JSON']
+
+[params]
+  editURL = 'https://ghe.siriusxm.com/content-services/recommender-service/documentation/edit/main/content/'
+  staticURL = '/pages/content-services/recommender-service/documentation/'
+  themeVariant = ['relearn-dark', 'relearn-light']
+
+[[menu.shortcuts]]
+name = '<i class="fab fa-fw fa-github"></i> GitHub repo'
+identifier = 'docs'
+url = 'https://ghe.siriusxm.com/content-services/recommender-service/tree/main/recommender-service/docs'
+weight = 10
